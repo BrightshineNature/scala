@@ -1,0 +1,7 @@
+class Rational( n:Int, d:Int){
+  require(d!=0)
+  private val g = gcd(n.abs, d.abs)
+  val number = n / g
+  val denom = d / g
+  //println("Created" + n + "/" +d)
+  override def toString = number+"/"+denom
